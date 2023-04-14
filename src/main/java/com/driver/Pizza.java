@@ -57,6 +57,7 @@ public class Pizza {
         if(addextratopping){
             var+=isVeg?"Extra Toppings Added: "+extratoppingveg+"\n":"Extra Toppings Added: "+getExtratoppingnonveg+"\n";
         }
+        if(addtakeaway) var+="Paperbag Added:"+takeaway+"\n";
         var+="Total Price: "+price+"\n";
         this.bill=var;
         return this.bill;
