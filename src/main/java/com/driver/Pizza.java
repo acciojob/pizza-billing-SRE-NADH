@@ -52,13 +52,13 @@ public class Pizza {
 
     public String getBill(){
         String var="";
-        var+=isVeg?"Base Price Of The Pizza: "+vegPizza+"\n":"Base Price Of The Pizza: "+nonvegPizza+"\n";
-        if(ischeeseadd) var+="Extra Cheese Added: "+cheeseprice+"\n";
+        var+=isVeg?"Base Price Of The Pizza:"+vegPizza+"\n":"Base Price Of The Pizza:"+nonvegPizza+"\n";
+        if(ischeeseadd) var+="Extra Cheese Added:"+cheeseprice+"\n";
         if(addextratopping){
-            var+=isVeg?"Extra Toppings Added: "+extratoppingveg+"\n":"Extra Toppings Added: "+getExtratoppingnonveg+"\n";
+            var+=isVeg?"Extra Toppings Added:"+extratoppingveg+"\n":"Extra Toppings Added:"+getExtratoppingnonveg+"\n";
         }
         if(addtakeaway) var+="Paperbag Added:"+takeaway+"\n";
-        var+="Total Price: "+price+"\n";
+        var+="Total Price:"+price+"\n";
         this.bill=var;
         return this.bill;
     }
